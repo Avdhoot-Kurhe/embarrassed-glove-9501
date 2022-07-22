@@ -1,5 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon, SearchIcon } from "@chakra-ui/icons";
 import { Box, Image, Input} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,9 +14,9 @@ export default function SearchBar(){
             <Box  p={'0 0 0 4rem'} fontSize={'2xl'} fontWeight={'800'} textAlign={'left'}  >Top Holiday Homes - Villas, Apartments & Homestays</Box>
                 <Box bg={'white'} borderRadius={'15'} color={'blackAlpha.600'} h={'3rem'} p={'5px'} display={'flex'} w='100%' border={'1px solid white'}>
                 <SearchIcon h={'40px'} /><Input w={'18%'} placeholder="Location"/>
-                <ChevronRightIcon h={'40px'}/><Input w={'18%'} placeholder="Check In"/>
-                <ChevronLeftIcon h={'40px'}/><Input w={'18%'} placeholder="Check Out"/>
-                <select>
+                <ChevronRightIcon h={'40px'}/><Input type={'date'} w={'25%'} placeholder="Check In"/>
+                <ChevronLeftIcon h={'40px'}/><Input type={'date'} w={'25%'} placeholder="Check Out"/>
+                <select >
                     <option value="">Select guests</option>
                     <option value="1">1 Person</option>
                     <option value="2">2 Person</option>
@@ -26,8 +27,8 @@ export default function SearchBar(){
                     <option value="7">7 Person</option>
                     <option value="8">8 Person</option>
                 </select>
-                <Input ml={'20px'} w={'20%'} bg={"Blue"} type={'submit'} color='white' cursor={'pointer'} value={'Search'}/>
-            </Box>
+                <Link to={'/Home/Goa'}><Input ml={'20px'} w={'100px'} bg={"Blue"} type={'submit'} color='white' cursor={'pointer'} value={'Search'}/></Link>
+                </Box>
         </Box>
         </>
     )
