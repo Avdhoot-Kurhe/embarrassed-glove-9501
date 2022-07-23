@@ -124,7 +124,7 @@ function handleBook(){
                             <AccordionIcon />
                             </AccordionButton>
                         </h2>
-                        <AccordionPan pb={2}>
+                        <AccordionPanel pb={2}>
                                 <HStack>
                                     <VStack>
                                     <Box fontSize={'2xl'}>Features</Box>
@@ -181,7 +181,7 @@ function handleBook(){
                                     <Button>Cancle</Button>
                                     <Button color={'white'} bg='Blue'>Apply</Button>
                                 </HStack>
-                        </AccordionPan>
+                        </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
             <VStack>
