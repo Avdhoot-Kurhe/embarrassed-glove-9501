@@ -3,7 +3,7 @@ import { Box, Heading, HStack } from "@chakra-ui/react";
 
 
 
-export default function Sliding(){
+export default function SlidingVacation(){
     const destinations=[
         { 
             id:1,
@@ -63,8 +63,8 @@ export default function Sliding(){
 
     return(
         <>
-        <Box  w={'90%'} m={'auto'} fontSize='2xl' mt={'14rem'}>
-            <Heading textAlign={'left'}>Top Destinations</Heading>
+        <Box  w={'90%'} m={'auto'} fontSize='2xl' mt={'1rem'}>
+            <Heading textAlign={'left'}>Vacation Ideas</Heading>
             <br/>
             <HStack m={'auto'} color={'black'}>
             <ArrowLeftIcon onClick={prev} h={'150px'} cursor={'pointer'}/>
